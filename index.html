@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Architect</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/jquery.fcGallery.min-1.0.0.js"></script>
+    <script type="text/javascript" src="js/customScript.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav, .solo-link').localScroll(800);
+            //.parallax(xPosition, speedFactor, outerHeight) options:
+            //xPosition - Horizontal position of the element
+            //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+            //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+            $('#home').parallax("50%", 0.1);
+            $('#about-me').parallax("50%", 0.1);
+            $('#portfolio').parallax("50%", 0.4);
+            $('#contact-me').parallax("50%", 0.3);
+
+            // Initiate the full screenGallery
+            $('.fc-gallery').fcGallery();
+
+        })
+    </script>
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="#home" title="Next Section">home </a></li>
+        <li><a href="#about-me" title="Next Section">about</a></li>
+        <li><a href="#portfolio" title="Next Section">portfolio </a></li>
+        <li><a href="#contact-me" title="Next Section">contact</a></li>
+    </ul>
+    <div class="page" id="home">
+        <div class="fc-gallery">
+            <img src="img/tmp/01.jpg" alt="" />
+            <img src="img/tmp/02.jpg" alt="" />
+            <img src="img/tmp/03.jpg" alt="" />
+            <img src="img/tmp/04.jpg" alt="" />
+            <img src="img/tmp/05.jpg" alt="" />
+            <img src="img/tmp/06.jpg" alt="" />
+            <img src="img/tmp/07.jpg" alt="" />
+            <img src="img/tmp/08.jpg" alt="" />
+            <img src="img/tmp/09.jpg" alt="" />
+            <img src="img/tmp/10.jpg" alt="" />
+        </div>
+        <div id="layer">
+            <span class="logo"><a href="#nogo">Queen's Lab</a></span>
+            <span class="solo-link">
+                <a href="#about-me" title="About Me" class="next-link">about Me  </a>
+            </span>
+        </div>
+
+    </div>
+    <div class="page" id="about-me">
+
+        <div class="row">
+            <div class="span-5-fluid">
+                <div class="col-35 txt-center relative">
+                    <div class="img-round"></div>
+                    <img src="img/about-me-icon.png" class="radius-250 img-abs transition" />
+                    &nbsp;
+                </div>
+                <div class="col-65">
+                    <h2 class="txt-left"> about me </h2>
+                    <p class="txt-left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                    <p class="txt-left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                    <p class="txt-left"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="portfolio">
+
+        <div class="span-5-fluid pull-left">
+              Coming soon..
+            </div>
+    </div>
+    <div class="page" id="contact-me">
+          <div class="span-5-fluid">
+                <div class="col-35 txt-center relative">
+                    <div class="img-round"></div>
+                    <img src="img/contact-grapgic.png" class="radius-250 img-contact transition" />
+                    &nbsp;
+                </div>
+                <div class="col-65">
+                    <h2 class="txt-left"> contact me. </h2>
+                    <form autocomplete="on">
+                    <div class="row">
+                        <div class="row">
+                            <input type="text" name="name" id="name" placeholder="your full name" required="required" />
+                        </div>
+                        <div class="row">
+                            <input type="text" name="name" id="email" placeholder="your email" required="required" />
+                        </div>
+                        <div class="row">
+                            <input type="text" name="name" id="cell" placeholder="your cellphone" required="required" />
+                        </div>
+
+                        <div class="row">
+                            <textarea placeholder="few word for me... feedback / suggections etc."></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="submit" name="submit" id="submit" class="btn-submit transition" value="submit" />
+                            <input type="reset" name="reset" id="reset" value="reset" class="transition btn-reset" />
+                        </div>
+
+                    </div>
+                        </form>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

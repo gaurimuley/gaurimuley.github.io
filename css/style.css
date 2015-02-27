@@ -1,0 +1,1230 @@
+﻿@charset "utf-8";
+
+*, *:after, *:before
+{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-family: "Raleway",sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+body
+{
+    margin: 0 auto;
+    min-width: 980px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    font-family: "Raleway",sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: left;
+    color: #000;
+    /*background: url(../img/textPress-bg.png);*/
+    background: url(../img/textPress-bg.png) 0 0 repeat fixed;
+}
+
+a, a:hover, a:active, a:focus
+{
+    outline: 0 !important;
+}
+
+p
+{
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+img
+{
+    border: 0;
+}
+
+h1, #pixels
+{
+    font-family: "Museo 900", Verdana, serif;
+    font-size-adjust: 0.40;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2
+{
+    font-size-adjust: 0.531;
+    font-style: normal;
+    font-family: "Raleway",sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+#header h1, #pixels
+{
+    color: #48941A;
+}
+
+.float-left
+{
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.float-right
+{
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+.center
+{
+    font-size: 2.5em;
+    padding: 80px 0 0 0;
+    text-align: center;
+}
+
+#nav
+{
+    list-style: none;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 100%;
+    z-index: 99999;
+}
+
+    #nav li
+    {
+        display: inline;
+        float: left;
+        margin-right: 10px;
+    }
+
+a, .logo
+{
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+#nav li a
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 70px;
+    background: #E74C3C;
+    font-size-adjust: 0.531;
+    font-style: normal;
+    font-family: "Raleway",sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+}
+
+    #nav li a:hover,
+    #nav li a.active
+    {
+        background: #1ad3f1;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+    }
+
+    #nav li a:focus,
+    #nav li a:active
+    {
+        background: #E74C3C;
+        text-decoration: line-through !important;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+#header, #home, #about-me, #portfolio, #contact-me
+{
+    width: 100%;
+    height: 768px;
+}
+
+#home
+{
+}
+
+#about-me
+{
+    background: url(../img/textPress-bg.png) 0 0 repeat fixed;
+}
+
+    #about-me p
+    {
+        line-height: 22px;
+    }
+
+#portfolio
+{
+    background: red url(../img/portfolio.jpg) 0 0 no-repeat fixed;
+}
+
+#contact-me
+{
+    /*background: #ccbebb url(../img/contact-me.jpg) 0 0 no-repeat fixed;*/
+    background:#fff;
+}
+
+.page
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.story .float-left, .story .float-right
+{
+    padding: 100px 0 0 0;
+    position: relative;
+    width: 350px;
+}
+
+a.next-link
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-left: 48.5%;
+    margin-top: 15px;
+    background: url(../img/next-click.png) right top no-repeat;
+    font-size: 0;
+}
+
+    a.next-link:hover,
+    a.next-link:focus
+    {
+        background: url(../img/next-click.png) right bottom no-repeat;
+    }
+
+.logo
+{
+    display: block;
+    width: 260px;
+    height: 260px;
+    border-radius: 260px;
+    background: transparent;
+    border: 5px solid rgb(231,76,60);
+    float: left;
+    margin-left: 40%;
+    margin-top: 12%;
+    opacity: 1;
+}
+
+    .logo:hover,
+    .logo:focus
+    {
+        border: 5px solid #1ad3f1;
+        text-decoration: none;
+    }
+
+    .logo a,
+    .logo a:active
+    {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 250px;
+        background: rgba(255,255,255,0.3);
+        position: relative;
+        color: rgba(231,76,60);
+        line-height: 250px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 600;
+        opacity: 1;
+        float: left;
+        z-index: 1000;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+        .logo a:hover
+        {
+            background: #E74C3C;
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        .logo a:before,
+        .logo a:after
+        {
+            content: 'Queens Lab';
+            line-height: 20px;
+            display: block;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0px;
+            opacity: 0;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+
+        .logo a:before
+        {
+            top: 50%;
+        }
+
+        .logo a:after
+        {
+            bottom: 43%;
+        }
+
+        .logo a:hover:before,
+        .logo a:hover:after
+        {
+            -webkit-animation: fadeIn 1s ease;
+            -moz-animation: fadeIn 1s ease;
+            -o-animation: fadeIn 1s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .logo a:hover:before
+        {
+            top: 0%;
+        }
+
+        .logo a:hover:after
+        {
+            bottom: 0%;
+        }
+
+@-webkit-keyframes fadeIn
+{
+    5%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0.9;
+    }
+}
+
+@-moz-keyframes fadeIn
+{
+    5%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0.9;
+    }
+}
+
+@-o-keyframes fadeIn 5%
+{
+    opacity: 1;
+}
+
+100%
+{
+    opacity: 0.9;
+}
+
+}
+
+@keyframes fadeIn
+{
+    5%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0.9;
+    }
+}
+
+
+#layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+#gall-nav a
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50px;
+    color: #E74C3C;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    text-indent: 0;
+    position: absolute;
+    top: 45%;
+    z-index: 9999999;
+    background: transparent;
+}
+
+    #gall-nav a[href="#previous"]
+    {
+        left: 20px;
+    }
+
+    #gall-nav a[href="#next"]
+    {
+        right: 20px;
+    }
+
+    #gall-nav a:hover,
+    #gall-nav a:focus
+    {
+        color: #fff;
+    }
+
+    #gall-nav a:hover
+    {
+        background: #E74C3C !important;
+    }
+
+
+    #gall-nav a:focus, #nav a:focus
+    {
+        background: #1ad3f1 !important;
+    }
+
+
+.fc-gallery
+{
+    z-index: 9;
+}
+
+    .fc-gallery,
+    .fc-gallery ul li
+    {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+    }
+
+        .fc-gallery li
+        {
+            position: absolute;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+/* ==|== Common Grid classes  ================================================
+   Please define your styles after this section.
+   ========================================================================= */
+
+*[class|="col"], *[class|="col"]:before,
+*[class|="col"]:after
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.col-1
+{
+    width: 10%;
+}
+
+.col-15
+{
+    width: 15%;
+}
+
+.col-2
+{
+    width: 20%;
+}
+
+.col-25
+{
+    width: 25%;
+}
+
+.col-3
+{
+    width: 30%;
+}
+
+.col-33
+{
+    width: 33.33%;
+}
+
+.col-33-gutter
+{
+    width: 33%;
+    margin-left: 0.17%;
+    margin-right: 0.16%;
+    float: left;
+}
+
+.col-35
+{
+    width: 35%;
+}
+
+.col-4
+{
+    width: 40%;
+}
+
+.col-45
+{
+    width: 45%;
+}
+
+.col-5
+{
+    width: 50%;
+}
+
+.col-55
+{
+    width: 55%;
+}
+
+.col-6
+{
+    width: 60%;
+}
+
+.col-65
+{
+    width: 65%;
+}
+
+.col-7
+{
+    width: 70%;
+}
+
+.col-75
+{
+    width: 75%;
+}
+
+.col-8
+{
+    width: 80%;
+}
+
+.col-85
+{
+    width: 85%;
+}
+
+.col-9
+{
+    width: 90%;
+}
+
+.col-95
+{
+    width: 95%;
+}
+
+.row, .container
+{
+    width: 100%;
+    float: left;
+    min-height: 20px;
+}
+
+.spacer
+{
+    width: 99%;
+    padding-right: 1%;
+    float: left;
+}
+
+
+/* ==|== Alignment classes  =================================================
+   Please define your styles after this section.
+   ========================================================================= */
+
+.txt-left
+{
+    text-align: left !important;
+}
+
+.txt-right
+{
+    text-align: right !important;
+}
+
+.txt-center
+{
+    text-align: center !important;
+}
+
+.txt-white
+{
+    color: #fff;
+}
+
+/* ==|== font-size classes  =================================================
+   Please define your styles after this section.
+   ========================================================================= */
+
+.big-font
+{
+    font-size: 30px;
+}
+
+.medium-font
+{
+    font-size: 18px;
+}
+
+.small-font
+{
+    font-size: 11px;
+}
+
+/* ==|== position classes  ==================================================
+   Please define your styles after this section.
+   ========================================================================== */
+
+.fixed
+{
+    position: fixed;
+    z-index: 9999;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+    z-index: 9999;
+}
+
+.left
+{
+    left: 0;
+}
+
+.bottom
+{
+    bottom: 0;
+}
+
+.right
+{
+    right: 0;
+}
+
+.top
+{
+    top: 0;
+}
+
+/* ==|== floating element classes  =========================================
+   Please define your styles after this section.
+   ========================================================================= */
+
+.pull-left
+{
+    float: left !important;
+}
+
+.pull-right
+{
+    float: right !important;
+}
+
+.pull-none
+{
+    float: none !important;
+}
+
+/* ==|== common structural classes  =========================================
+   Please define your styles after this section.
+   ========================================================================== */
+
+a
+{
+    text-decoration: none;
+}
+
+    a:hover
+    {
+        text-decoration: underline;
+    }
+
+.transition, a
+{
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.fill-15
+{
+    padding: 15px;
+}
+
+.fill-25
+{
+    padding: 25px;
+}
+
+.fill-5-fluid
+{
+    padding: 5%;
+}
+
+.fill-10
+{
+    padding: 10px;
+}
+
+.fill-left-null
+{
+    padding-left: 0;
+}
+
+.fill-top-null
+{
+    padding-top: 0;
+}
+
+.fill-right-null
+{
+    padding-right: 0;
+}
+
+.fill-bttom-null
+{
+    padding-bottom: 0;
+}
+
+.fill-null
+{
+    padding: 0;
+}
+
+p
+{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.span-5-fluid
+{
+    margin: 5%;
+}
+
+.span-10
+{
+    margin: 10px;
+}
+
+.span-15
+{
+    margin: 15px;
+}
+
+.span-20
+{
+    margin: 20px;
+}
+
+.span-25
+{
+    margin: 25px;
+}
+
+.span-30
+{
+    margin: 30px;
+}
+
+.span-left-null
+{
+    margin-left: 0;
+}
+
+.span-top-null
+{
+    margin-top: 0;
+}
+
+.span-right-null
+{
+    margin-right: 0;
+}
+
+.span-bttom-null
+{
+    margin-bottom: 0;
+}
+
+.span-null
+{
+    margin: 0;
+}
+
+.hide
+{
+    display: none !important;
+}
+
+.show, .block
+{
+    display: block !important;
+}
+
+.inline
+{
+    display: inline !important;
+}
+
+.inline-block
+{
+    display: inline-block !important;
+}
+
+.display-table
+{
+    display: table !important;
+}
+
+.overflow-hidden
+{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.null, .reset
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+.strong, .bold
+{
+    font-weight: bold;
+}
+
+.divider
+{
+    border-top: 1px solid #b2b2b2;
+    margin-top: 5px;
+    height: 5px;
+    min-height: 5px !important;
+    max-height: 5px !important;
+}
+
+img.img-left
+{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.colon
+{
+    position: relative;
+}
+
+    .colon:after
+    {
+        content: ':';
+        width: 2px;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        z-index: 8888;
+    }
+
+.bg-white
+{
+    background-color: #fff;
+}
+
+/* ==|== border-classes  ===========================================================
+   Please define your styles after this section.
+   ================================================================================ */
+
+.brdr-left
+{
+    border-left: 1px solid #ada19a;
+}
+
+.brdr-right
+{
+    border-right: 1px solid #ada19a;
+}
+
+.brdr-top
+{
+    border-top: 1px solid #ada19a;
+}
+
+.brdr-bottom
+{
+    border-bottom: 1px solid #ada19a;
+}
+
+.brdr
+{
+    border: 1px dashed #ada19a;
+}
+
+.radius-2
+{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.radius-5
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.radius-25
+{
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.radius-topleft-null
+{
+    -webkit-border-top-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -ms-border-top-left-radius: 0;
+    -o-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.radius-topright-null
+{
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -ms-border-top-right-radius: 0;
+    -o-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.radius-bottomleft-null
+{
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -ms-border-bottom-left-radius: 0;
+    -o-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.radius-bottomright-null
+{
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -ms-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* ==|== structural Classes  ================================================
+   Please define your styles after this section.
+   ========================================================================== */
+h1, h2, h3
+{
+    font-weight: 300;
+}
+
+.img-round,
+.img-abs, .img-contact
+{
+    position: absolute;
+    left: 20%;
+    top: 40px;
+}
+
+.img-abs
+{
+    border: 1px solid #343434;
+}
+
+.img-contact
+{
+    left: 21.5%;
+    top: 47px;
+}
+
+.img-abs:hover,
+.img-abs:focus,
+.img-contact
+{
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+    .img-contact:hover,
+    .img-contact:focus,
+    .img-abs
+    {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+
+.img-round
+{
+    width: 270px;
+    height: 270px;
+    border-radius: 270px;
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #a90329 0%, #ea04c0 9%, #0339ad 19%, #1c9903 29%, #a88a03 41%, #a88a03 41%, #5b0155 57%, #e03b04 73%, #e8e004 86%, #6d0019 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a90329), color-stop(9%,#ea04c0), color-stop(19%,#0339ad), color-stop(29%,#1c9903), color-stop(41%,#a88a03), color-stop(41%,#a88a03), color-stop(57%,#5b0155), color-stop(73%,#e03b04), color-stop(86%,#e8e004), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #a90329 0%,#ea04c0 9%,#0339ad 19%,#1c9903 29%,#a88a03 41%,#a88a03 41%,#5b0155 57%,#e03b04 73%,#e8e004 86%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #a90329 0%,#ea04c0 9%,#0339ad 19%,#1c9903 29%,#a88a03 41%,#a88a03 41%,#5b0155 57%,#e03b04 73%,#e8e004 86%,#6d0019 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #a90329 0%,#ea04c0 9%,#0339ad 19%,#1c9903 29%,#a88a03 41%,#a88a03 41%,#5b0155 57%,#e03b04 73%,#e8e004 86%,#6d0019 100%); /* IE10+ */
+    background: linear-gradient(135deg, #a90329 0%,#ea04c0 9%,#0339ad 19%,#1c9903 29%,#a88a03 41%,#a88a03 41%,#5b0155 57%,#e03b04 73%,#e8e004 86%,#6d0019 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-animation: swirlIt 25s linear;
+    -moz-animation: swirlIt 25s linear;
+    -o-animation: swirlIt 25s linear;
+    animation: swirlIt 25s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border: 1px solid #343434;
+    -webkit-box-shadow: 0px 0px 10px #343434;
+    -moz-box-shadow: 0px 0px 10px #343434;
+    -o-box-shadow: 0px 0px 10px #343434;
+    box-shadow: 0px 0px 10px #343434;
+}
+
+@keyframes swirlIt
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes swirlIt
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes swirlIt
+{
+    0%
+    {
+        -moz-transform: rotate(0deg);
+    }
+
+    100%
+    {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes swirlIt
+{
+    0%;
+
+{
+    -o-transform: rotate(0deg);
+}
+
+100%
+{
+    -o-transform: rotate(360deg);
+}
+
+}
+
+
+
+.img-round img
+{
+    margin-top: 10px;
+}
+
+
+.radius-250
+{
+    border-radius: 250px;
+}
+
+
+/*@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { .selector {} }*/
+
+#about-me h2, #contact-me h2
+{
+    color: #fff;
+    background: -webkit-linear-gradient(top, #e6bf04, #b5281e);
+    background: linear-gradient(top, #e6bf04, #b5281e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ #contact-me h2{
+     color:#000;
+ }
+
+#about-me p
+{
+    color: #fff;
+    background: -webkit-linear-gradient(top, #fff, #1ad3f1);
+    background: linear-gradient(top, #fff, #1ad3f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page .span-5-fluid
+{
+    float: left;
+    width: 90%;
+    text-align: left !important;
+}
+
+#contact-me input[type="text"],
+#contact-me textarea
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: transparent url(../img/input-bg.png) left top repeat;
+}
+
+#contact-me input:hover,
+#contact-me input:focus,
+#contact-me textarea:hover,
+#contact-me textarea:focus
+{
+    outline: 0;
+}
+
+#contact-me textarea
+{
+    min-height: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+#contact-me input,
+#contact-me textarea
+{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #000;
+    border: 0;
+}
+
+#contact-me input[type="submit"],
+#contact-me input[type="reset"]{
+    background:transparent;
+    cursor:pointer;
+    margin:30px 20px 0 0;
+    font-weight:400;
+    font-size:26px;
+}
+
+#contact-me input[type="submit"]:hover,
+#contact-me input[type="submit"]:focus,
+#contact-me input[type="reset"]:hover,
+#contact-me input[type="reset"]:focus{
+    text-decoration:line-through;
+    color:#E74C3C;
+}
+
+#contact-me input[placeholder],
+#contact-me textarea[placeholder]{
+    color:#000;
+}
+
+
+.btn-submit{
+
+}
+
+.btn-reset{
+
+}
+
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-reset:hover,
+.btn-reset:focus{
+    outline:0;
+}
